@@ -2,6 +2,7 @@
 
 Mirrors upstream community cookbooks into an internal supermarket using berks.
 
+This does require a service account created in your internal chef/supermarket for uploading
 
 Update /usr/local/bin/nightly_mirror_cookbooks.sh with your:
 
@@ -10,4 +11,5 @@ Update /usr/local/bin/nightly_mirror_cookbooks.sh with your:
 * cookbook_mirror directory with a Berksfile in it.
 
 
-This does require a service account created in your internal chef/supermarket for uploading
+Cron nightly_mirror_cookbooks.sh as needed.
+
