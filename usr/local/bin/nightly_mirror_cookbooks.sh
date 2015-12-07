@@ -7,7 +7,6 @@ export http_proxy https_proxy PATH
 
 cd /var/opt/chef/cookbook_mirror
 echo "Cookbook sync on $(hostname) for $(date +%F)" >>$logfile
-git fetch chef-utils >>$logfile 2>&1
 berks update >>$logfile 2>&1
 berks vendor >>$logfile 2>&1
 
